@@ -6,7 +6,7 @@ A simple spam filter leveraging SVM and Naive Bayes algorithm to detect spam and
 Please follow the steps given below-
 
 1. Copy 'enron1' (which contains training and test emails), 'test' (directory which contains all test mails) and all the python scripts to the same directory.
-2. **TRAINING PHASE-** Run the scripts in the following order-
+2. **TRAINING PHASE-** Run the scripts in the following order- <br>
 	(a) Run *collection_frequency.py* <br>
 	(b) Run *vocabulary_and_training_set_creation.py* <br>
 	(c) Run *cross_validation_set_creation.py* <br>
