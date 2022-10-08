@@ -17,11 +17,11 @@ In our project, we have randomly selected a subset containing only 5172 emails. 
 Please follow the steps given below-
 
 1. Copy 'enron1' (which contains training and test emails), 'test' (directory which contains all test mails) and all the python scripts to the same directory.
-2. **TRAINING PHASE-** Run the scripts in the following order- <br>
-	(a) Run *collection_frequency.py* <br>
-	(b) Run *vocabulary_and_training_set_creation.py* <br>
-	(c) Run *cross_validation_set_creation.py* <br>
-	(d) Run *train_svm_classifier.py* <br>
+2. **TRAINING PHASE-** Run the scripts in the following order-
+	(a) Run *collection_frequency.py*
+	(b) Run *vocabulary_and_training_set_creation.py*
+	(c) Run *cross_validation_set_creation.py*
+	(d) Run *train_svm_classifier.py*
 3. **TESTING PHASE-** Run *predict_emails.py* to predict emails in test set.
 
 Link for downloading dataset- https://drive.google.com/file/d/1_G2175I1DAawnfGlIMdMAcgy3Sy5iwL2/view?usp=sharing
