@@ -34,7 +34,7 @@ $$s_{w, e} = \log_{10}{(count(w, e) + 1} \times log_{10}{(\frac{N}{N_w})}$$
 
 Here, $s_{w, e}$ is the tf-idf weighted value for word $w$ in document $e$, $count(w, e)$ is the raw count of the number of times word $w$ appears in email $e$, $N$ is the total number of emails in the collection, and $N_{w}$ is the number of emails in which word $w$ occurs.
 
-The feature matrix for the training set is a $\mathcal{R}^{n_{t} \times d}$ matrix , where, $n_{t} is the number of emails in the training set, and $d$ is the number of words in the vocabulary. Similarly, the feature matrix for the cross-validation set is a \mathcal{R}^{n_{v} \times d} matrix , where, $n_{v}$ is the number of emails in the cross-validation set.
+The feature matrix for the training set is a $\mathcal{R}^{n_{t} \times d}$ matrix , where, $n_{t}$ is the number of emails in the training set, and $d$ is the number of words in the vocabulary. Similarly, the feature matrix for the cross-validation set is a \mathcal{R}^{n_{v} \times d} matrix , where, $n_{v}$ is the number of emails in the cross-validation set.
 
 <!-- ## Classifier Models -->
 
