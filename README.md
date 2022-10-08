@@ -8,7 +8,7 @@ We have used the **Enron Email Dataset** in this project. This dataset was colle
 In our project, we have randomly selected a subset containing only 5172 emails. We divide this subset in a ratio of 80:20 such that the training set contains 4137 emails and the cross-validation set contains 1035 emails. While creating the training and cross-validation set, we also ensure that these sets have nearly the same distribution of hams and spams. Specifically, there are 2937 hams and 1200 spams in the training set, leading to a distribution of 71:29 (approx), and the cross-validation set has 735 hams and 300 spams, leading to a distribution of 71:29 (approx).
 <div align="center">
     <p>
-        <img src="images/distribution-training_set.png" alt="Training set distribution" width=43% height=43%>
+        <img src="images/distribution-training_set.png" alt="Training set distribution" width=45% height=45%>
         <img src="images/distribution-cross_validation_set.png" alt="Cross-validation set distribution" width=50% height=50%>
     </p>
 </div>
