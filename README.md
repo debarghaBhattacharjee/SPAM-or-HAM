@@ -44,16 +44,16 @@ We use the following classifiers in this project:
 ## SVM Results
 <div align="center">
     <p>
-        <img src="images/results-svm.png" alt="SVM Results" width=70%>
+        <img src="images/results-svm.png" alt="SVM Results" width=80%>
     </p>
 </div>
-In case of the SVM classifier, we found that the linear SVM classier with regularization parameter $C = 1$ gave the best results, resulting in an $F_{1}$ score of 0.93 and accuracy of 95.56% on the cross-validation set . We also saw that the vocabulary plays an important role in determining the efficacy of the classification. For example, a threshold collection frequency of 5 used to filter the words before vocabulary creation lead to the best results. Compared to the SVM classifier, the Naive Bayes classifier performed rather poorly giving an accuracy of only 67%.
+In case of the SVM classifier, we found that the linear SVM classifier with regularization parameter $C = 1$ gave the best results, resulting in an $F_{1}$ score of 0.93 and accuracy of 95.56% on the cross-validation set . We also saw that the vocabulary plays an important role in determining the efficacy of the classification. For example, a threshold collection frequency of 5 used to filter the words before vocabulary creation lead to the best results. Compared to the SVM classifier, the Naive Bayes classifier performed rather poorly giving an accuracy of only 67%.
     
 ### Hyperparameter tuning results
 We tested our SVM model for 5 different threshold frequencies (used to filter sporadic words before creating vocabulary)- $\{5, 10, 30, 50, 100 \}$. Additionally, for each threshold frequency, we also tested the model with 10 different values of the regularization parameter $C$ (used to control the slack penalty in SVM)- $\{10, 20, 30, 40, 50, 60, 70, 80, 90 \}$.
 <div align="center">
     <p>
-        <img src="images/hyperparameter_tuning-svm.png" alt="SVM Hyperparameter Tuning" width=70%>
+        <img src="images/hyperparameter_tuning-svm.png" alt="SVM Hyperparameter Tuning" width=80%>
     </p>
 </div>
 
