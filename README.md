@@ -4,7 +4,7 @@ Spam emails (or simply, spams) are unwanted emails which the users are bombarded
 ## Enron Dataset
 We have used the **Enron Email Dataset** in this project. This dataset was collected and prepared by the CALO project and originally contains about 0.5M messages, collected from nearly 150 Enron employees. More deatails about the Enron dataset can be found [here](https://www.cs.cmu.edu/~./enron/).
 
-### Training and Cross-validation split
+### Training and Cross-validation Split
 In our project, we have randomly selected a subset containing only 5172 emails. We divide this subset in a ratio of 80:20 such that the training set contains 4137 emails and the cross-validation set contains 1035 emails. While creating the *training* and *cross-validation* sets, we also ensure that these sets have nearly the same distribution of hams and spams. Specifically, there are 2937 hams and 1200 spams in the training set, leading to a distribution of 71:29 (approx), and the cross-validation set has 735 hams and 300 spams, leading to a distribution of 71:29 (approx).
 <div align="center">
     <p>
@@ -36,10 +36,28 @@ Here, $s_{w, e}$ is the tf-idf weighted value for word $w$ in document $e$, $cou
 
 The feature matrix for the training set is a $\mathcal{R}^{n_{t} \times d}$ matrix , where, $n_{t}$ is the number of emails in the training set, and $d$ is the number of words in the vocabulary. Similarly, the feature matrix for the cross-validation set is a \mathcal{R}^{n_{v} \times d} matrix , where, $n_{v}$ is the number of emails in the cross-validation set.
 
-<!-- ## Classifier Models -->
+## Classifiers
+We use the following classifiers in this project:
+1. SVM (with slack variables) *\[Primary classifier used in experiments\]*
+2. Naive-Bayes model *\[Baseline model\]*
 
+## SVM Results
+<div align="center">
+    <p>
+        <img src="images/results-svm.png" alt="SVM Results">
+    </p>
+</div>
+In case of the SVM classifier, we found that the linear SVM classier with regularization parameter $C = 1$ gave the best results, resulting in an $F_{1}$ score of 0.93 and accuracy of 95.56% on the cross-validation set . We also saw that the vocabulary plays an important role in determining the efficacy of the classification. For example, a threshold collection frequency of 5 used to filter the words before vocabulary creation lead to the best results. Compared to the SVM classifier, the Naive Bayes classifier performed rather poorly giving an accuracy of only 67%.
+    
+### Hyperparameter tuning results
+We tested our SVM model for 5 different threshold frequencies (used to filter sporadic words before creating vocabulary)- $\left \{5, 10, 30, 50, 100 \right \}$. Additionally, for each threshold frequency, we also tested the model with 10 different values of the regularization parameter $C$ (used to control the slack penalty in SVM)- $\left \{10, 20, 30, 40, 50, 60, 70, 80, 90 \right \}$.
+<div align="center">
+    <p>
+        <img src="images/hyperparameter_tuning-svm.png" alt="SVM Hyperparameter Tuning">
+    </p>
+</div>
 
-## Instructions to reproduce code
+## Instructions to Reproduce Code
 Please follow the steps given below-
 
 1. Copy 'enron1' (which contains training and test emails), 'test' (directory which contains all test mails) and all the python scripts to the same directory.
