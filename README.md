@@ -9,11 +9,11 @@ In our project, we have randomly selected a subset containing only 5172 emails. 
 
 #### Training set distribution
 There are 2937 hams and 1200 spams in the training set, leading to a distribution of 71:29 (approx).
-<p><img src="images/distribution-training_set.png" alt="Training set distribution" width=45% height=45%></p>
+<div align="center"><p><img src="images/distribution-training_set.png" alt="Training set distribution" width=45% height=45%></p></div>
 
 #### Cross-validation set distribution
 The cross-validation set has 735 hams and 300 spams, leading to a distribution of 71:29 (approx).
-<p><img src="images/distribution-cross_validation_set.png" alt="Cross-validation set distribution" width=50% height=50%></p>
+<div align="center"><p><img src="images/distribution-cross_validation_set.png" alt="Cross-validation set distribution" width=50% height=50%></p></div>
 
 ## Instructions to reproduce code
 Please follow the steps given below-
